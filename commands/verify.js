@@ -1,6 +1,5 @@
-const { Client, Intents } = require('discord.js');
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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')
+sgMail.setApiKey('token')
 email = null;
 userEmail = null;
 function sleep(ms) {
@@ -24,7 +23,7 @@ module.exports = {
         let seniorRole = message.guild.roles.cache.find(roles => roles.name === 'senior');
 
         //intro stuff
-        message.channel.send("Thank you for joining the FC Chat Discord.");
+        message.channel.send("Thank you for joining the discord server here Discord.");
         sleep(15000);
         message.channel.send("We need to veriy a few things before I give you access.");
         sleep(15000);
@@ -48,15 +47,15 @@ module.exports = {
             const code = Math.floor(100000 + Math.random() * 900000);
             console.log(`Verification code is ${code}`);
 
-            //check that domain is @ftstudent.org
+            //check that domain is @yourdomainhere.com
             const checkEmail = userEmail.replace('@', ' ');
             console.log(checkEmail);
 
-            if (checkEmail.endsWith("ftstudent.org")) {
+            if (checkEmail.endsWith("yourdomainhere.com")) {
                 const msg = {
                     to: `${userEmail}`, // Change to your recipient
-                    from: 'svalencia@ftstudent.org', // Change to your verified sender
-                    subject: 'FT Students Discord Verification',
+                    from: 'youremailonSendGrid@yourdomainhere.com', // Change to your verified sender
+                    subject: 'discord server here Discord Verification',
                     text: `Here is your code: ${code}`,
                     html: `<h1>Here is your code: ${code}</h1>`,
                 }
