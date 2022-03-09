@@ -27,7 +27,7 @@ line 3: `sgMail.setApiKey('Your api key here');`
 ### Other Info
 
 #### Features/Bugs
-Put them in the Issues Tab with the appropriate labels <br>
+Put them in the [Issues](https://github.com/svalencia014/schoolBot/issues) Tab with the appropriate labels <br>
 * Bugs - `bug` <br>
 * Features - `enhancement` <br>
 * Documentation suggestions - `documentation` <br>
