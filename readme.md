@@ -10,7 +10,9 @@ or <br>
 `cd schoolBot`
 
 3. Install packages <br>
-`./setup.sh`
+* Linux & Mac:  `./setup.sh`
+* Windows: `Coming soon`
+
 
 4. Edit the last line of bot.js with your discord token (from discord.com/developers) <br>
 line 36: `client.login("Insert your token here");`
