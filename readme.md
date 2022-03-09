@@ -12,5 +12,14 @@ or
 3. Install packages
 `./setup.sh`
 
-4. Run with node
+4. Edit the last line of bot.js with your discord token (from discord.com/developers)
+line 36: `client.login("Insert your token here");`
+
+5. Sign up for a [sendGrid](https://sendgrid.com/) account and input your api token in /commands/verify.js (Found on the integration page, where you send your first email)
+line 3: `sgMail.setApiKey('Your api key here');`
+
+6. Skim though verify.js and look for any "Discord name here" or "your email" and replace them accordingly.
+`lines 18, 27, 51, 55, 58, 116, 120`
+
+7. Run with node
 `node .`
